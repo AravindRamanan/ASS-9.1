@@ -1,8 +1,8 @@
 1. Why MapReduce program is needed in Pig Programming?
 
-
-
-
+Pig is an abstraction over MapReduce. In other words, all Pig scripts internally are converted into Map and Reduce tasks to get the task done. 
+So Map reduce is the layer on top of which Pig is built.Moreover Map reduce is the means by which Hadoop can communicate with HDFS.so
+MapReduce program is needed in Pig Programming
 
 --------------------------------------------------------------------------------------------------------------------------------------
 2. What are advantages of pig over MapReduce?
@@ -13,44 +13,37 @@
 * Pig has comparitively lesser lines of code than MapReduce.
 * Development effort is less in pig than Mapreduce.
 * Pig is simple to learn and use as compared to Map Reduce.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 3. What is pig engine and what is its importance?
 
 * Apache Pig has a component known as Pig Engine that accepts the Pig Latin scripts as input and converts those scripts into MapReduce jobs.
 
-* Engine is one of the most important parts of the pig without which we can't 
-
-
-
-
-
+* Engine is one of the most important parts of the pig without which we can't get the results.
 
 * Pig provides an execution engine atop Hadoop which 
 – Removes need for users to tune Hadoop for their needs.
 – Insulates users from changes in Hadoop interfaces.
 
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 4. What are the modes of Pig execution?
 
+Pig has two execution modes or exectypes:
 
+* Local Mode - To run Pig in local mode, you need access to a single machine; all files are installed and run using your local host and file system. Specify local mode using the -x flag (pig -x local).
 
+* Mapreduce Mode - To run Pig in mapreduce mode, you need access to a Hadoop cluster and HDFS installation. Mapreduce mode is the default mode; you can, but don't need to, specify it using the -x flag (pig OR pig -x mapreduce).
 
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------
 5. What is grunt shell in Pig?
 
 
+* Grunt is Pig’s interactive shell. 
+* It enables users to enter Pig Latin interactively and provides a shell for users to interact with HDFS.
+* In other words, Pig script or the Pig command line is called Grunt.
 
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------
 6. What are the features of Pig Latin language?
 * Rich set of operators − It provides many operators to perform operations like join, sort, filer, etc.
 
@@ -81,3 +74,9 @@ EXAMPLES:
 
 --------------------------------------------------------------------------------------------------------------------------------------
 8. What is a data flow language? 
+
+To access the external data, every language must follow certain rules and regulations. The instructions are flowing through data by executing different control statements, but data doesn't get moved. Data flow language can get a stream of data which passes from one instruction to another instruction to be processed. pig can easily process those conditions, jumps, loops and process the data in efficient manner.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
