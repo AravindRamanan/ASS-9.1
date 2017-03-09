@@ -4,19 +4,30 @@
 
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 2. What are advantages of pig over MapReduce?
 
-
-
-
-
-
-
+* Pig’s programming language referred to as Pig Latin is a coding approach that provides high degree of abstraction for MapReduce programming but is a procedural code not declarative. 
+* Pig Latin code can be extended through various user defined functions that are written in Python, Java, Groovy, JavaScript, and Ruby. * Pig has tools for data storage, data execution and data manipulation. 
+* Pig Latin is highly promoted by Yahoo as all the data engineers at Yahoo use Pig for processing data on the biggest hadoop clusters in the world.
+* Pig has comparitively lesser lines of code than MapReduce.
+* Development effort is less in pig than Mapreduce.
+* Pig is simple to learn and use as compared to Map Reduce.
+----------------------------------------------------------------------------------------------------------------------------------------
 3. What is pig engine and what is its importance?
 
+* Apache Pig has a component known as Pig Engine that accepts the Pig Latin scripts as input and converts those scripts into MapReduce jobs.
+
+* Engine is one of the most important parts of the pig without which we can't 
 
 
+
+
+
+
+* Pig provides an execution engine atop Hadoop which 
+– Removes need for users to tune Hadoop for their needs.
+– Insulates users from changes in Hadoop interfaces.
 
 
 
@@ -53,22 +64,20 @@
 
 * Handles all kinds of data − Apache Pig analyzes all kinds of data, both structured as well as unstructured. It stores the results in HDFS.
 
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 7. Is Pig latin commands case sensitive?
 
+* The names (aliases) of relations and fields are case sensitive. 
+* The names of Pig Latin functions are case sensitive. 
+* The names of parameters and all other Pig Latin keywords (see Reserved Keywords) are case insensitive.
 
+EXAMPLES: 
 
+* The names (aliases) of relations A, B, and C are case sensitive.
+* The names (aliases) of fields f1, f2, and f3 are case sensitive.
+* Function names PigStorage and COUNT are case sensitive.
+* Keywords LOAD, USING, AS, GROUP, BY, FOREACH, GENERATE, and DUMP are case insensitive. They can also be written as load, using, as, group, by, etc.
 
-
-
-
-
-
-
-
+--------------------------------------------------------------------------------------------------------------------------------------
 8. What is a data flow language? 
